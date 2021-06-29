@@ -5,7 +5,7 @@ using UnityEngine;
 public class getFruit : MonoBehaviour
 {
     public GameObject collected;
-
+    public int score;
     private SpriteRenderer spriteRenderer;
     private CircleCollider2D boxCollider2D;
     void Start()
@@ -21,7 +21,9 @@ public class getFruit : MonoBehaviour
             spriteRenderer.enabled = false;
             boxCollider2D.enabled = false;
             collected.SetActive(true);
-
+            score++;
+            GameController.instance.totalScore += score;
+            GameController.instance.updateScoreText();
             Destroy(gameObject, 0.24f);
         }
     }
