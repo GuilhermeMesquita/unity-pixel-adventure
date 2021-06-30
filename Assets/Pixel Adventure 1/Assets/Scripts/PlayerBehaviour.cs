@@ -79,7 +79,7 @@ public class PlayerBehaviour : MonoBehaviour
             anim.SetBool("Jump", false);
         }
 
-        if (other.gameObject.CompareTag("Spike"))
+        if (other.gameObject.CompareTag("Spike") || other.gameObject.layer == 6)
         {
             GameController.instance.showGameOver();
             Destroy(gameObject, 0.1f);
