@@ -78,6 +78,12 @@ public class PlayerBehaviour : MonoBehaviour
             isJumping = false;
             anim.SetBool("Jump", false);
         }
+
+        if (other.gameObject.CompareTag("Spike"))
+        {
+            GameController.instance.showGameOver();
+            Destroy(gameObject, 0.1f);
+        }
     }
     private void OnCollisionExit2D(Collision2D other)
     {
