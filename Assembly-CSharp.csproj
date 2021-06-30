@@ -39,6 +39,7 @@
      <Compile Include="Assets\Pixel Adventure 1\Assets\Scripts\PlayerBehaviour.cs" />
      <Compile Include="Assets\Pixel Adventure 1\Assets\Scripts\getFruit.cs" />
      <Compile Include="Assets\Pixel Adventure 1\Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Pixel Adventure 1\Assets\Scripts\FallingPlatform.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
