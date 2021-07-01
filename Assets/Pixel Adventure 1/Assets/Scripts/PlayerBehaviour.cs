@@ -82,7 +82,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Spike") || other.gameObject.layer == 6)
         {
             GameController.instance.showGameOver();
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject, 0.01f);
         }
     }
     private void OnCollisionExit2D(Collision2D other)
