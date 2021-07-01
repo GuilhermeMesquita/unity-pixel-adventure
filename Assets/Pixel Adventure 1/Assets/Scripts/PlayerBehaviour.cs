@@ -79,8 +79,9 @@ public class PlayerBehaviour : MonoBehaviour
             anim.SetBool("Jump", false);
         }
 
-        if (other.gameObject.CompareTag("Spike") || other.gameObject.layer == 6)
+        if (other.gameObject.CompareTag("Spike") || other.gameObject.layer == 6 || other.gameObject.CompareTag("Saw"))
         {
+            Debug.Log("Colidiu!");
             GameController.instance.showGameOver();
             Destroy(gameObject, 0.01f);
         }
